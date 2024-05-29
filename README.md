@@ -1,63 +1,44 @@
 ---
 datapackage:
-  title: Welcome to your template dataset page!
-  description: This is a template for publishing your dataset with Datahub Cloud.
+  title:
+  description: Tourism in Nepal
   created: 2024-01-01
   updated: 2024-01-31
   licenses:
   - path: http://opendatacommons.org/licenses/pddl/
     title: Open Data Commons Public Domain Dedication and License v1.0
   sources:
-  - path: http://link.to/data/source
-    title: Link to data source
+  - path: https://www.tourism.gov.np//downloads
+    title: 
   resources:
-  - name: c02-per-decade
-    title: C02 PPM per decade
-    description: C02 PPM per decade
+  - name: number-of-international-tourist-arrivals-by-year-1993–2021
+    title: Number of international tourist arrivals by year, 1993–2021
+    format: CSV
+    description: 
     lastModified: 2024-01-15
     path: data.csv
 ---
 
-Welcome to the body of your dataset site. Everything above this section is part of the Data package front matter. 
 
-# Overview
+# Number of international tourist arrivals by year, 1993–2021
+This data shows the annual number of international tourists arriving in Nepal from 1993 to 2023 and the year-over-year changes, highlighting growth trends, significant declines due to events like the 2015 earthquake and the 2020 COVID-19 pandemic, and strong recovery phases, particularly in 2022 and 2023.
 
-Here is a quick overview of the template structure:
+# Key Points
+1993-2000: A period of steady growth with occasional minor declines, reflecting a generally positive trend in tourism.
+2001-2002: Sharp declines due to global and local issues.
+2003-2014: A steady recovery and growth phase, with only minor fluctuations.
+2015: A significant impact year due to the earthquake.
+2016-2019: Rapid recovery and growth, leading to peak tourist numbers.
+2020: Severe impact of the COVID-19 pandemic.
+2021-2023: Recovery phase post-pandemic, with substantial increases in tourist numbers.
 
-![[Overview.png]]
+# Visualization 
 
-## Structured data
-
-```mermaid
-  graph TD;
-      Data-Package-Frontmatter-->Dataset-title
-      Data-Package-Frontmatter-->Data-package-metadata
-      Data-Package-Frontmatter-->Short-description;
-      Data-Package-Frontmatter-->Data-files-list;
-      Data-Package-Frontmatter-->Data-Previews;
-```
-
-Feel free to customize the data package frontmatter accordingly when publishing your own data. 
-
-## Unstructured data
-
-You can add as many markdown files to your GitHub repository as you like, and you can freely nest them in subdirectories. You can also enhance your content with other data visualisation components and markdown features.
-
-> Note: For a full list of supported markdown features visit https://flowershow.app/docs/syntax
-
-Here are some quick examples:
-
-> [!info] This is cool!
-> Here's a callout block.
-> It supports **markdown** and [[Internal link|wikilinks]].
-
-Or you can quickly embed a piece of code as follows:
-
-```
-const ExampleCode = () => {
-  return <div> .... </div>;
-};
-```
-
-## To read more about how this works, refer to the [docs page](docs).
-
+<LineChart
+  data={{
+    url: "data.csv"
+  }}
+  title="Annual CO2 Emissions"
+  xAxis="year"
+  yAxis="number of tourists"
+/>
