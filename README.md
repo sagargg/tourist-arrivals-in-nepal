@@ -2,8 +2,6 @@
 datapackage:
   title:
   description: Tourism in Nepal
-  created: 2024-01-01
-  updated: 2024-01-31
   licenses:
   - path: http://opendatacommons.org/licenses/pddl/
     title: Open Data Commons Public Domain Dedication and License v1.0
@@ -11,16 +9,15 @@ datapackage:
   - path: https://www.tourism.gov.np//downloads
     title: 
   resources:
-  - name: number-of-international-tourist-arrivals-by-year-1993–2021
-    title: Number of international tourist arrivals by year, 1993–2021
+  - name: number-of-international-tourist-arrivals-by-year-1993–2023
+    title: Number of international tourist arrivals by year, 1993–2023
     format: CSV
     description: 
-    lastModified: 2024-01-15
     path: data.csv
 ---
 
 
-# Number of international tourist arrivals by year, 1993–2021
+# Number of international tourist arrivals by year, 1993–2023
 This data shows the annual number of international tourists arriving in Nepal from 1993 to 2023 and the year-over-year changes, highlighting growth trends, significant declines due to events like the 2015 earthquake and the 2020 COVID-19 pandemic, and strong recovery phases, particularly in 2022 and 2023.
 
 # Key Points
