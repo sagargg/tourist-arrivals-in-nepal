@@ -38,7 +38,7 @@ This data shows the annual number of international tourists arriving in Nepal fr
   data={{
     url: "data.csv"
   }}
-  title="Annual CO2 Emissions"
+  title="Number of international tourist per each year"
   xAxis="year"
-  yAxis="number of tourists"
+  yAxis="number_of_tourists"
 />
