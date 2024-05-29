@@ -13,7 +13,7 @@ datapackage:
     title: Number of international tourist arrivals by year, 1993–2023
     format: CSV
     description: 
-    path: data.csv
+    path: tourism-data.csv
 ---
 
 
@@ -33,7 +33,7 @@ This data shows the annual number of international tourists arriving in Nepal fr
 
 <LineChart
   data={{
-    url: "data.csv"
+    url: "tourism-data.csv"
   }}
   title="Number of international tourist per each year"
   xAxis="year"
