@@ -32,7 +32,7 @@ This data shows the annual number of international tourists arriving in Nepal fr
 #  Chart 
 
 <LineChart
-  data={{ url: "tourism-data.csv" }}
+  data={{ url: "https://raw.githubusercontent.com/sagargg/tourist-arrivals-in-nepal/main/tourism-data.csv" }}
   title="Number of international tourist per each year"
   xAxis="year"
   yAxis="number_of_tourists"
@@ -40,7 +40,7 @@ This data shows the annual number of international tourists arriving in Nepal fr
 
 
 <PlotlyLineChart
-  data={{ url: "tourism-data.csv" }}
+  data={{ url: "https://raw.githubusercontent.com/sagargg/tourist-arrivals-in-nepal/main/tourism-data.csv" }}
   title="Number of international tourist per each year"
   xAxis="year"
   yAxis="number_of_tourists"
