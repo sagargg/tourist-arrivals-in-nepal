@@ -32,9 +32,15 @@ This data shows the annual number of international tourists arriving in Nepal fr
 #  Chart 
 
 <LineChart
-  data={{
-    url: "tourism-data.csv"
-  }}
+  data={{ url: "tourism-data.csv" }}
+  title="Number of international tourist per each year"
+  xAxis="year"
+  yAxis="number_of_tourists"
+/>
+
+
+<PlotlyLineChart
+  data={{ url: "tourism-data.csv" }}
   title="Number of international tourist per each year"
   xAxis="year"
   yAxis="number_of_tourists"
